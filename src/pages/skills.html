@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Jordan Doe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">JD</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="skills.html" title="Skills" class="active"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="skills-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>My <span class="highlight">Skills</span></h1>
+                    <h2>Medical • Technical • Leadership • Athletic • Creative</h2>
+                    <p>Continuously developing and refining my abilities across multiple domains to serve others effectively and make a meaningful impact in the world.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Skills Mastered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Medical Skills Section -->
+        <section class="skills-section" id="medical-skills">
+            <h2 class="section-title">Medical Skills & Interests</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-stethoscope skill-icon"></i>
+                        <h3>Emergency Medicine</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="85"></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <p class="skill-description">Strong foundation in emergency response protocols, patient assessment, and critical care principles.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Patient Assessment</span>
+                        <span class="highlight-tag">CPR Certified</span>
+                        <span class="highlight-tag">First Aid</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-baby skill-icon"></i>
+                        <h3>Pediatrics</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="80"></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <p class="skill-description">Specialized knowledge in child development, pediatric assessment, and family-centered care approaches.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Child Development</span>
+                        <span class="highlight-tag">Family Care</span>
+                        <span class="highlight-tag">Growth Monitoring</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-heartbeat skill-icon"></i>
+                        <h3>Cardiology</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="75"></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <p class="skill-description">Understanding of cardiovascular anatomy, physiology, and common cardiac conditions and treatments.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Cardiac Assessment</span>
+                        <span class="highlight-tag">ECG Interpretation</span>
+                        <span class="highlight-tag">Prevention</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-microscope skill-icon"></i>
+                        <h3>Clinical Research</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="70"></div>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                    <p class="skill-description">Experience in research methodology, data analysis, and evidence-based medicine principles.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Research Design</span>
+                        <span class="highlight-tag">Data Analysis</span>
+                        <span class="highlight-tag">Evidence-Based</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="skills-section" id="technical-skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <h3>Python Programming</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="90"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <p class="skill-description">Advanced Python programming with focus on data analysis, automation, and web development applications.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Data Analysis</span>
+                        <span class="highlight-tag">Automation</span>
+                        <span class="highlight-tag">Web Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-code skill-icon"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="85"></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <p class="skill-description">Full-stack web development using HTML, CSS, JavaScript, and modern frameworks for responsive design.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">HTML/CSS</span>
+                        <span class="highlight-tag">JavaScript</span>
+                        <span class="highlight-tag">Responsive Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-database skill-icon"></i>
+                        <h3>Data & APIs</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="80"></div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <p class="skill-description">Working with JSON data, REST APIs, and database management for data-driven applications.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">JSON</span>
+                        <span class="highlight-tag">REST APIs</span>
+                        <span class="highlight-tag">Database Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-robot skill-icon"></i>
+                        <h3>AI Tools & Automation</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="75"></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <p class="skill-description">Leveraging AI tools for productivity, automation, and innovative problem-solving approaches.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">AI Integration</span>
+                        <span class="highlight-tag">Automation</span>
+                        <span class="highlight-tag">Productivity Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills Section -->
+        <section class="skills-section" id="soft-skills">
+            <h2 class="section-title">Soft Skills & Leadership</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-users skill-icon"></i>
+                        <h3>Leadership</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="95"></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <p class="skill-description">Proven leadership abilities through team captain roles, youth ministry leadership, and community initiatives.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Team Captain</span>
+                        <span class="highlight-tag">Youth Ministry</span>
+                        <span class="highlight-tag">Community Service</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-user-graduate skill-icon"></i>
+                        <h3>Mentorship</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="90"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <p class="skill-description">Guiding and supporting others in their personal, academic, and spiritual development journeys.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Youth Mentoring</span>
+                        <span class="highlight-tag">Academic Support</span>
+                        <span class="highlight-tag">Life Coaching</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-hands-helping skill-icon"></i>
+                        <h3>Humility</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="95"></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <p class="skill-description">Maintaining humility while achieving excellence, always giving credit to God and others.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Servant Leadership</span>
+                        <span class="highlight-tag">Gratitude</span>
+                        <span class="highlight-tag">Team Recognition</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-mountain skill-icon"></i>
+                        <h3>Perseverance</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="90"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <p class="skill-description">Demonstrated resilience and determination in overcoming challenges and pursuing long-term goals.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Resilience</span>
+                        <span class="highlight-tag">Goal Setting</span>
+                        <span class="highlight-tag">Overcoming Obstacles</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Athletic Skills Section -->
+        <section class="skills-section" id="athletic-skills">
+            <h2 class="section-title">Athletic Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-volleyball skill-icon"></i>
+                        <h3>Volleyball Excellence</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="95"></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <p class="skill-description">Regional MVP, team captain, and setter with exceptional leadership and strategic gameplay abilities.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Regional MVP</span>
+                        <span class="highlight-tag">Team Captain</span>
+                        <span class="highlight-tag">Setter Position</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-users skill-icon"></i>
+                        <h3>Teamwork</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="95"></div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <p class="skill-description">Exceptional ability to work collaboratively, support teammates, and achieve collective goals.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Collaboration</span>
+                        <span class="highlight-tag">Support</span>
+                        <span class="highlight-tag">Collective Success</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <i class="fa-solid fa-dumbbell skill-icon"></i>
+                        <h3>Discipline</h3>
+                    </div>
+                    <div class="skill-level-container">
+                        <div class="skill-level" data-skill="90"></div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <p class="skill-description">Consistent training, practice, and commitment to physical and mental excellence.</p>
+                    <div class="skill-highlights">
+                        <span class="highlight-tag">Consistent Training</span>
+                        <span class="highlight-tag">Mental Focus</span>
+                        <span class="highlight-tag">Commitment</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Languages Section -->
+        <section class="skills-section" id="languages">
+            <h2 class="section-title">Languages & Communication</h2>
+            <div class="languages-grid">
+                <div class="language-card">
+                    <div class="language-header">
+                        <i class="fa-solid fa-flag skill-icon"></i>
+                        <h3>English</h3>
+                    </div>
+                    <div class="language-level">
+                        <span class="level-label">Native</span>
+                        <div class="level-indicator">
+                            <div class="level-fill native"></div>
+                        </div>
+                    </div>
+                    <p class="language-description">Fluent in reading, writing, speaking, and academic communication.</p>
+                </div>
+
+                <div class="language-card">
+                    <div class="language-header">
+                        <i class="fa-solid fa-flag skill-icon"></i>
+                        <h3>Spanish</h3>
+                    </div>
+                    <div class="language-level">
+                        <span class="level-label">Intermediate</span>
+                        <div class="level-indicator">
+                            <div class="level-fill intermediate"></div>
+                        </div>
+                    </div>
+                    <p class="language-description">Conversational Spanish with medical terminology knowledge for patient care.</p>
+                </div>
+
+                <div class="language-card">
+                    <div class="language-header">
+                        <i class="fa-solid fa-code skill-icon"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="language-level">
+                        <span class="level-label">Advanced</span>
+                        <div class="level-indicator">
+                            <div class="level-fill advanced"></div>
+                        </div>
+                    </div>
+                    <p class="language-description">Python, JavaScript, HTML/CSS with focus on practical applications.</p>
+                </div>
+            </div>
+            </section>
+
+        <!-- Certifications Section -->
+        <section class="skills-section" id="certifications">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <i class="fa-solid fa-certificate certification-icon"></i>
+                        <h3>CPR & First Aid</h3>
+                    </div>
+                    <div class="certification-details">
+                        <span class="certification-org">American Red Cross</span>
+                        <span class="certification-date">2023 - Present</span>
+                    </div>
+                    <p class="certification-description">Certified in CPR and First Aid, essential for medical practice and emergency response.</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <i class="fa-solid fa-award certification-icon"></i>
+                        <h3>Leadership Training</h3>
+                    </div>
+                    <div class="certification-details">
+                        <span class="certification-org">Youth Ministry Institute</span>
+                        <span class="certification-date">2022 - Present</span>
+                    </div>
+                    <p class="certification-description">Advanced leadership training focused on youth development and community service.</p>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-header">
+                        <i class="fa-solid fa-graduation-cap certification-icon"></i>
+                        <h3>Medical Terminology</h3>
+                    </div>
+                    <div class="certification-details">
+                        <span class="certification-org">Medical Education Institute</span>
+                        <span class="certification-date">2023 - Present</span>
+                    </div>
+                    <p class="certification-description">Comprehensive understanding of medical terminology and healthcare communication.</p>
+                </div>
+            </div>
+            </section>
+
+        <!-- Learning Goals Section -->
+        <section class="goals-section">
+            <h2 class="section-title">Current Learning Goals</h2>
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <i class="fa-solid fa-microscope goal-icon"></i>
+                    <h3>Advanced Medical Research</h3>
+                    <p>Pursuing advanced research methodologies and clinical trial design to contribute to medical innovation.</p>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <span class="progress-text">60% Complete</span>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <i class="fa-solid fa-language goal-icon"></i>
+                    <h3>Medical Spanish Fluency</h3>
+                    <p>Enhancing Spanish language skills specifically for medical practice and patient communication.</p>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <span class="progress-text">75% Complete</span>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <i class="fa-solid fa-code goal-icon"></i>
+                    <h3>Advanced Web Development</h3>
+                    <p>Mastering modern frameworks and advanced web technologies for healthcare applications.</p>
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                        <span class="progress-text">45% Complete</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">JD</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. © <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

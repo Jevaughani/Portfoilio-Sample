@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Tree - Jordan Doe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/skill-tree.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">JD</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="skill-tree.html" title="Skill Tree" class="active"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="skill-tree-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Skill <span class="highlight">Tree</span></h1>
+                    <h2>My Learning Journey & Growth Path</h2>
+                    <p>Explore my evolving skill set through an interactive tree visualization. Each branch represents a different area of expertise, with progress indicators showing my learning journey.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Main Branches</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Mastery Levels</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Tree Visualization -->
+        <section class="skill-tree-section" id="skill-tree">
+            <div class="tree-container">
+                <div class="tree-controls">
+                    <button class="control-btn active" data-branch="all">All Skills</button>
+                    <button class="control-btn" data-branch="medical">Medical</button>
+                    <button class="control-btn" data-branch="technical">Technical</button>
+                    <button class="control-btn" data-branch="leadership">Leadership</button>
+                    <button class="control-btn" data-branch="creative">Creative</button>
+                    <button class="control-btn" data-branch="athletic">Athletic</button>
+                </div>
+                
+                <div class="skill-tree">
+                    <!-- Medical Branch -->
+                    <div class="skill-branch medical-branch" data-category="medical">
+                        <div class="branch-root">
+                            <div class="skill-node root-node" data-skill="medical-foundation">
+                                <i class="fa-solid fa-user-md"></i>
+                                <span>Medical Foundation</span>
+                                <div class="skill-level expert">Expert</div>
+                            </div>
+                        </div>
+                        <div class="branch-connections">
+                            <div class="skill-node" data-skill="anatomy">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>Anatomy</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="physiology">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span>Physiology</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="biochemistry">
+                                <i class="fa-solid fa-dna"></i>
+                                <span>Biochemistry</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="clinical-skills">
+                                <i class="fa-solid fa-stethoscope"></i>
+                                <span>Clinical Skills</span>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Branch -->
+                    <div class="skill-branch technical-branch" data-category="technical">
+                        <div class="branch-root">
+                            <div class="skill-node root-node" data-skill="programming">
+                                <i class="fa-solid fa-code"></i>
+                                <span>Programming</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="branch-connections">
+                            <div class="skill-node" data-skill="web-development">
+                                <i class="fa-solid fa-globe"></i>
+                                <span>Web Development</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="python">
+                                <i class="fa-brands fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="data-analysis">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Data Analysis</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="machine-learning">
+                                <i class="fa-solid fa-robot"></i>
+                                <span>Machine Learning</span>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leadership Branch -->
+                    <div class="skill-branch leadership-branch" data-category="leadership">
+                        <div class="branch-root">
+                            <div class="skill-node root-node" data-skill="leadership">
+                                <i class="fa-solid fa-crown"></i>
+                                <span>Leadership</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="branch-connections">
+                            <div class="skill-node" data-skill="team-management">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Team Management</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="public-speaking">
+                                <i class="fa-solid fa-microphone"></i>
+                                <span>Public Speaking</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="mentorship">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                <span>Mentorship</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="conflict-resolution">
+                                <i class="fa-solid fa-handshake"></i>
+                                <span>Conflict Resolution</span>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creative Branch -->
+                    <div class="skill-branch creative-branch" data-category="creative">
+                        <div class="branch-root">
+                            <div class="skill-node root-node" data-skill="content-creation">
+                                <i class="fa-solid fa-video"></i>
+                                <span>Content Creation</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                        </div>
+                        <div class="branch-connections">
+                            <div class="skill-node" data-skill="video-editing">
+                                <i class="fa-solid fa-film"></i>
+                                <span>Video Editing</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="graphic-design">
+                                <i class="fa-solid fa-palette"></i>
+                                <span>Graphic Design</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="writing">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Writing</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="photography">
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Photography</span>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Athletic Branch -->
+                    <div class="skill-branch athletic-branch" data-category="athletic">
+                        <div class="branch-root">
+                            <div class="skill-node root-node" data-skill="volleyball">
+                                <i class="fa-solid fa-volleyball"></i>
+                                <span>Volleyball</span>
+                                <div class="skill-level expert">Expert</div>
+                            </div>
+                        </div>
+                        <div class="branch-connections">
+                            <div class="skill-node" data-skill="teamwork">
+                                <i class="fa-solid fa-people-group"></i>
+                                <span>Teamwork</span>
+                                <div class="skill-level expert">Expert</div>
+                            </div>
+                            <div class="skill-node" data-skill="physical-fitness">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <span>Physical Fitness</span>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-node" data-skill="sports-strategy">
+                                <i class="fa-solid fa-chess"></i>
+                                <span>Sports Strategy</span>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-node" data-skill="coaching">
+                                <i class="fa-solid fa-person-chalkboard"></i>
+                                <span>Coaching</span>
+                                <div class="skill-level beginner">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Details Panel -->
+        <section class="skill-details-section" id="skill-details">
+            <div class="details-container">
+                <div class="skill-info-panel" id="skillInfoPanel">
+                    <div class="panel-header">
+                        <h3>Skill Information</h3>
+                        <button class="close-panel" id="closePanel">×</button>
+                    </div>
+                    <div class="skill-details" id="skillDetails">
+                        <p class="select-prompt">Click on any skill node to view detailed information</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Roadmap -->
+        <section class="roadmap-section">
+            <h2 class="section-title">Learning Roadmap</h2>
+            <div class="roadmap-grid">
+                <div class="roadmap-card">
+                    <h3>Current Focus (2024)</h3>
+                    <ul class="roadmap-list">
+                        <li>Advanced Medical Terminology</li>
+                        <li>Machine Learning Fundamentals</li>
+                        <li>Advanced Video Editing</li>
+                        <li>Coaching Certification</li>
+                    </ul>
+                </div>
+                <div class="roadmap-card">
+                    <h3>Short Term (2025)</h3>
+                    <ul class="roadmap-list">
+                        <li>Medical School Applications</li>
+                        <li>Data Science Specialization</li>
+                        <li>Content Creation Platform</li>
+                        <li>Youth Sports Coaching</li>
+                    </ul>
+                </div>
+                <div class="roadmap-card">
+                    <h3>Long Term (2026-2030)</h3>
+                    <ul class="roadmap-list">
+                        <li>Medical Degree Completion</li>
+                        <li>Healthcare Technology Startup</li>
+                        <li>International Ministry Network</li>
+                        <li>Professional Coaching Career</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/skill-tree.js"></script>
+</body>
+</html> 

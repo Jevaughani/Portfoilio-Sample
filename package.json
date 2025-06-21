@@ -1,0 +1,45 @@
+{
+  "name": "sample-portfolio-template",
+  "version": "1.0.0",
+  "description": "A comprehensive, faith-driven portfolio website template showcasing a multi-faceted journey across technology, medicine, athletics, ministry, and content creation.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src -p 3000",
+    "dev": "npx live-server src --port=3000 --open=/index.html",
+    "build": "echo 'No build process required - static HTML/CSS/JS site'",
+    "lint": "echo 'No linting configured - consider adding HTML/CSS/JS linters'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "portfolio-template",
+    "personal-website",
+    "faith",
+    "software-engineer",
+    "medical-student",
+    "content-creator",
+    "volleyball",
+    "ministry",
+    "responsive-design",
+    "html5",
+    "css3",
+    "javascript",
+    "template"
+  ],
+  "author": "Sample Author",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jevaughani/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jevaughani/portfolio/issues"
+  },
+  "homepage": "https://jevaughani.github.io/portfolio",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

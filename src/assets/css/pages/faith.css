@@ -1,0 +1,642 @@
+/* === FAITH PAGE STYLES === */
+
+/* === HERO SECTION === */
+.faith-hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1b21 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.faith-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0,188,212,0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.faith-hero .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.faith-hero .hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.faith-hero .hero-text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+.faith-hero .hero-text h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    animation: fadeInUp 1s ease 0.2s;
+}
+
+.faith-hero .hero-text p {
+    font-size: 1.2rem;
+    color: #b2ebf2;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.4s;
+}
+
+.faith-hero .hero-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    animation: fadeInUp 1s ease 0.6s;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.stat-item:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #b2ebf2;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* === STATEMENT OF FAITH SECTION === */
+.statement-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--bg-dark) 100%);
+}
+
+.statement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.statement-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.statement-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.statement-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.statement-card h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.statement-card p {
+    color: #b2ebf2;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.belief-highlights,
+.mission-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.belief-item,
+.mission-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0,188,212,0.1);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--accent);
+}
+
+.belief-item i,
+.mission-item i {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.belief-item span,
+.mission-item span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* === VERSES SECTION === */
+.verses-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1b21 100%);
+}
+
+.verses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.verse-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.verse-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.verse-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.verse-icon {
+    font-size: 2rem;
+    color: var(--accent);
+    opacity: 0.7;
+}
+
+.verse-header h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.verse-card blockquote {
+    font-size: 1.3rem;
+    color: var(--accent);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    border-left: 4px solid var(--accent);
+    padding-left: 1.5rem;
+}
+
+.verse-reflection {
+    color: #b2ebf2;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* === PRAYERS SECTION === */
+.prayers-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--bg-dark) 100%);
+}
+
+.prayers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.prayer-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.prayer-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.prayer-icon {
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.prayer-card h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.prayer-content {
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.prayer-content p {
+    color: #b2ebf2;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-style: italic;
+    margin: 0;
+}
+
+.prayer-focus {
+    background: rgba(0,188,212,0.1);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--accent);
+    margin-top: auto;
+}
+
+.prayer-focus span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* === REFLECTIONS SECTION === */
+.reflections-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1b21 100%);
+}
+
+.reflections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reflection-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.reflection-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.reflection-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.reflection-icon {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.reflection-header h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.reflection-card p {
+    color: #b2ebf2;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.reflection-highlight {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(0,188,212,0.1);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.reflection-highlight i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+.reflection-highlight span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* === SERMON HUB SECTION === */
+.sermon-hub-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--bg-dark) 100%);
+}
+
+.sermon-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sermon-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.sermon-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.sermon-intro h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.sermon-intro p {
+    color: #b2ebf2;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.sermon-topics h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,188,212,0.15);
+}
+
+.topic-item i {
+    color: var(--accent);
+    font-size: 1.2rem;
+}
+
+.topic-item span {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 1200px) {
+    .statement-grid,
+    .verses-grid,
+    .prayers-grid,
+    .reflections-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .topics-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .faith-hero .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .faith-hero .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .faith-hero .hero-text h2 {
+        font-size: 1.3rem;
+    }
+    
+    .faith-hero .hero-stats {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        min-width: 140px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .statement-grid,
+    .verses-grid,
+    .prayers-grid,
+    .reflections-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .topics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .faith-hero {
+        padding: 3rem 1rem;
+    }
+    
+    .faith-hero .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .faith-hero .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        min-width: 0;
+        width: 100%;
+    }
+    
+    .statement-section,
+    .verses-section,
+    .prayers-section,
+    .reflections-section,
+    .sermon-hub-section {
+        padding: 4rem 1rem;
+    }
+    
+    .statement-card,
+    .verse-card,
+    .prayer-card,
+    .reflection-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .statement-card h3,
+    .verse-header h3,
+    .prayer-card h3,
+    .reflection-header h3,
+    .sermon-intro h3 {
+        font-size: 1.5rem;
+    }
+    
+    .verse-card blockquote {
+        font-size: 1.1rem;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .topic-item {
+        padding: 1rem 1.2rem;
+    }
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === HIGHLIGHT CLASS === */
+.highlight {
+    color: var(--accent);
+}
+
+/* === SECTION TITLE STYLING === */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+}

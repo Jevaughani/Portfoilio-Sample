@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Hub - Jordan Doe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/mentorship.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">JD</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="mentorship.html" title="Mentorship" class="active"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="mentorship-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Mentorship <span class="highlight">Hub</span></h1>
+                    <h2>Growing Together, Serving Together</h2>
+                    <p>Connect with me for guidance, support, and collaborative growth. Whether you're seeking mentorship or looking to mentor others, this is a space for meaningful connections and shared learning.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Mentees</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Years Mentoring</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Focus Areas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentorship Areas -->
+        <section class="mentorship-areas" id="mentorship-areas">
+            <h2 class="section-title">Mentorship Focus Areas</h2>
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3>Technology & Programming</h3>
+                    <p>Web development, software engineering, and tech career guidance for aspiring developers.</p>
+                    <ul class="area-topics">
+                        <li>Web Development Fundamentals</li>
+                        <li>Career Path Planning</li>
+                        <li>Project Portfolio Building</li>
+                        <li>Technical Interview Prep</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-user-md"></i>
+                    </div>
+                    <h3>Pre-Medical & Healthcare</h3>
+                    <p>Guidance for students pursuing medical careers, from pre-med preparation to application strategies.</p>
+                    <ul class="area-topics">
+                        <li>Pre-Med Course Planning</li>
+                        <li>Medical School Applications</li>
+                        <li>MCAT Preparation</li>
+                        <li>Healthcare Career Exploration</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-dove"></i>
+                    </div>
+                    <h3>Faith & Spiritual Growth</h3>
+                    <p>Spiritual mentorship and guidance for young Christians navigating their faith journey.</p>
+                    <ul class="area-topics">
+                        <li>Bible Study Methods</li>
+                        <li>Prayer Life Development</li>
+                        <li>Faith Integration in Daily Life</li>
+                        <li>Youth Ministry Leadership</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3>Content Creation & Media</h3>
+                    <p>Support for aspiring content creators, from video production to building an online presence.</p>
+                    <ul class="area-topics">
+                        <li>Video Production Skills</li>
+                        <li>Content Strategy</li>
+                        <li>Audience Building</li>
+                        <li>Platform Optimization</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-volleyball"></i>
+                    </div>
+                    <h3>Athletics & Leadership</h3>
+                    <p>Sports mentorship focusing on athletic excellence, teamwork, and leadership development.</p>
+                    <ul class="area-topics">
+                        <li>Athletic Skill Development</li>
+                        <li>Team Leadership</li>
+                        <li>Sports Psychology</li>
+                        <li>Coaching Fundamentals</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+
+                <div class="area-card">
+                    <div class="area-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Personal Development</h3>
+                    <p>Life coaching and personal growth guidance for young adults navigating transitions.</p>
+                    <ul class="area-topics">
+                        <li>Goal Setting & Planning</li>
+                        <li>Time Management</li>
+                        <li>Personal Branding</li>
+                        <li>Work-Life Balance</li>
+                    </ul>
+                    <div class="area-status available">Available for Mentorship</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentorship Programs -->
+        <section class="mentorship-programs" id="mentorship-programs">
+            <h2 class="section-title">Mentorship Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>One-on-One Mentorship</h3>
+                        <span class="program-badge">Most Popular</span>
+                    </div>
+                    <div class="program-content">
+                        <p>Personalized guidance tailored to your specific goals and challenges.</p>
+                        <ul class="program-features">
+                            <li><i class="fa-solid fa-check"></i>Monthly 1-hour sessions</li>
+                            <li><i class="fa-solid fa-check"></i>Email support between sessions</li>
+                            <li><i class="fa-solid fa-check"></i>Personalized action plans</li>
+                            <li><i class="fa-solid fa-check"></i>Progress tracking</li>
+                            <li><i class="fa-solid fa-check"></i>Resource recommendations</li>
+                        </ul>
+                        <div class="program-duration">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>3-6 month commitment</span>
+                        </div>
+                        <button class="program-btn primary">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Group Mentorship</h3>
+                        <span class="program-badge">New</span>
+                    </div>
+                    <div class="program-content">
+                        <p>Learn alongside peers in a collaborative environment focused on shared goals.</p>
+                        <ul class="program-features">
+                            <li><i class="fa-solid fa-check"></i>Bi-weekly group sessions</li>
+                            <li><i class="fa-solid fa-check"></i>Peer learning opportunities</li>
+                            <li><i class="fa-solid fa-check"></i>Group projects & challenges</li>
+                            <li><i class="fa-solid fa-check"></i>Community support network</li>
+                            <li><i class="fa-solid fa-check"></i>Shared resources & tools</li>
+                        </ul>
+                        <div class="program-duration">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>2-4 month commitment</span>
+                        </div>
+                        <button class="program-btn secondary">Join Waitlist</button>
+                    </div>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-header">
+                        <h3>Workshop Series</h3>
+                        <span class="program-badge">Limited</span>
+                    </div>
+                    <div class="program-content">
+                        <p>Intensive skill-building workshops focused on specific topics and techniques.</p>
+                        <ul class="program-features">
+                            <li><i class="fa-solid fa-check"></i>Weekend intensive sessions</li>
+                            <li><i class="fa-solid fa-check"></i>Hands-on practice</li>
+                            <li><i class="fa-solid fa-check"></i>Take-home materials</li>
+                            <li><i class="fa-solid fa-check"></i>Follow-up support</li>
+                            <li><i class="fa-solid fa-check"></i>Certificate of completion</li>
+                        </ul>
+                        <div class="program-duration">
+                            <i class="fa-solid fa-clock"></i>
+                            <span>1-2 day workshops</span>
+                        </div>
+                        <button class="program-btn outline">View Schedule</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories" id="success-stories">
+            <h2 class="section-title">Success Stories</h2>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>Sarah M.</h4>
+                            <span class="story-area">Pre-Medical Student</span>
+                        </div>
+                    </div>
+                    <blockquote>"Jordan's guidance helped me navigate the complex pre-med journey. I'm now accepted to my dream medical school!"</blockquote>
+                    <div class="story-outcome">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Accepted to Johns Hopkins Medical School</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>Michael R.</h4>
+                            <span class="story-area">Aspiring Developer</span>
+                        </div>
+                    </div>
+                    <blockquote>"From coding basics to landing my first tech job, Jordan's mentorship was invaluable to my career transition."</blockquote>
+                    <div class="story-outcome">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Hired as Junior Developer at Tech Startup</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>Emma L.</h4>
+                            <span class="story-area">Youth Ministry Leader</span>
+                        </div>
+                    </div>
+                    <blockquote>"Jordan's faith mentorship helped me develop a stronger spiritual foundation and better serve my youth group."</blockquote>
+                    <div class="story-outcome">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Leading 50+ youth in weekly ministry</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Hub -->
+        <section class="resources-hub">
+            <h2 class="section-title">Mentorship Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <h3>Recommended Books</h3>
+                    <p>Curated reading list for personal and professional development.</p>
+                    <ul class="resource-list">
+                        <li>"Atomic Habits" by James Clear</li>
+                        <li>"The 7 Habits of Highly Effective People"</li>
+                        <li>"Mindset" by Carol Dweck</li>
+                        <li>"Deep Work" by Cal Newport</li>
+                    </ul>
+                    <a href="#" class="resource-link">View Full List <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <h3>Video Resources</h3>
+                    <p>Educational videos and tutorials covering various topics.</p>
+                    <ul class="resource-list">
+                        <li>Study Techniques & Time Management</li>
+                        <li>Faith Integration in Daily Life</li>
+                        <li>Career Planning & Goal Setting</li>
+                        <li>Leadership Development</li>
+                    </ul>
+                    <a href="#" class="resource-link">Watch Videos <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                    <h3>Downloadable Tools</h3>
+                    <p>Free templates, worksheets, and planning tools.</p>
+                    <ul class="resource-list">
+                        <li>Goal Setting Worksheet</li>
+                        <li>Study Schedule Template</li>
+                        <li>Prayer Journal Template</li>
+                        <li>Career Planning Checklist</li>
+                    </ul>
+                    <a href="#" class="resource-link">Download Tools <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="mentorship-cta">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Whether you're seeking guidance or looking to give back, let's connect and grow together.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn primary-btn">Request Mentorship</a>
+                    <a href="contact.html" class="btn secondary-btn">Become a Mentor</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

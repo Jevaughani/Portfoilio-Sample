@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media - Jordan Doe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">JD</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="media.html" title="Media" class="active"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="media-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Media <span class="highlight">Gallery</span></h1>
+                    <h2>Photos • Videos • Content • Memories</h2>
+                    <p>Explore my journey through visual storytelling. From academic achievements and athletic moments to ministry experiences and personal growth - every image and video tells a story of faith, perseverance, and service.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Photos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Videos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Media Section -->
+        <section class="media-section" id="featured-media">
+            <h2 class="section-title">Featured Media</h2>
+            <div class="media-grid">
+                <div class="media-card">
+                    <div class="media-image">
+                        <img src="../assets/images/volleyball1.jpg" alt="Volleyball Championship" class="media-img">
+                        <div class="media-overlay">
+                            <div class="media-actions">
+                                <a href="#" class="media-btn" onclick="openLightbox('../assets/images/volleyball1.jpg', 'Regional Volleyball Championship')">
+                                    <i class="fa-solid fa-expand"></i>
+                                    View
+                                </a>
+                                <a href="#" class="media-btn">
+                                    <i class="fa-solid fa-share"></i>
+                                    Share
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-header">
+                            <h3>Regional Volleyball Championship</h3>
+                            <div class="media-tags">
+                                <span class="media-tag">Sports</span>
+                                <span class="media-tag">Leadership</span>
+                            </div>
+                        </div>
+                        <p class="media-description">Leading my team to victory in the regional volleyball championship, demonstrating exceptional teamwork and strategic gameplay.</p>
+                        <div class="media-details">
+                            <div class="media-detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>December 2023</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-map-marker-alt"></i>
+                                <span>Kingston, Jamaica</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-trophy"></i>
+                                <span>Regional Champions</span>
+                            </div>
+                        </div>
+                        <div class="media-purpose">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Highlighting athletic excellence and team leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="media-image">
+                        <img src="../assets/images/ministry1.jpg" alt="Youth Ministry Event" class="media-img">
+                        <div class="media-overlay">
+                            <div class="media-actions">
+                                <a href="#" class="media-btn" onclick="openLightbox('../assets/images/ministry1.jpg', 'Youth Ministry Leadership')">
+                                    <i class="fa-solid fa-expand"></i>
+                                    View
+                                </a>
+                                <a href="#" class="media-btn">
+                                    <i class="fa-solid fa-share"></i>
+                                    Share
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-header">
+                            <h3>Youth Ministry Leadership</h3>
+                            <div class="media-tags">
+                                <span class="media-tag">Faith</span>
+                                <span class="media-tag">Service</span>
+                            </div>
+                        </div>
+                        <p class="media-description">Leading youth ministry activities and mentoring young people in their faith journey and personal development.</p>
+                        <div class="media-details">
+                            <div class="media-detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>Ongoing</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-users"></i>
+                                <span>50+ Youth</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>Community Impact</span>
+                            </div>
+                        </div>
+                        <div class="media-purpose">
+                            <i class="fa-solid fa-dove"></i>
+                            <span>Demonstrating faith-based leadership and community service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="media-card">
+                    <div class="media-image">
+                        <img src="../assets/images/event1.jpg" alt="Academic Achievement" class="media-img">
+                        <div class="media-overlay">
+                            <div class="media-actions">
+                                <a href="#" class="media-btn" onclick="openLightbox('../assets/images/event1.jpg', 'Academic Excellence Award')">
+                                    <i class="fa-solid fa-expand"></i>
+                                    View
+                                </a>
+                                <a href="#" class="media-btn">
+                                    <i class="fa-solid fa-share"></i>
+                                    Share
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-header">
+                            <h3>Academic Excellence Award</h3>
+                            <div class="media-tags">
+                                <span class="media-tag">Academic</span>
+                                <span class="media-tag">Achievement</span>
+                            </div>
+                        </div>
+                        <p class="media-description">Receiving recognition for outstanding academic performance and commitment to excellence in pre-medical studies.</p>
+                        <div class="media-details">
+                            <div class="media-detail">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>May 2023</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-award"></i>
+                                <span>Dean's List</span>
+                            </div>
+                            <div class="media-detail">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Pre-Med Excellence</span>
+                            </div>
+                        </div>
+                        <div class="media-purpose">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Showcasing academic dedication and achievement</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Gallery Section -->
+        <section class="video-gallery" id="video-gallery">
+            <h2 class="section-title">Video Gallery</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="../assets/images/content1.jpg" alt="Volleyball Highlights" class="video-thumb">
+                        <div class="play-button" onclick="openVideoModal('https://www.youtube.com/embed/example1', 'Volleyball Championship Highlights')">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <div class="video-header">
+                            <h3>Volleyball Championship Highlights</h3>
+                            <span class="video-duration">3:45</span>
+                        </div>
+                        <p class="video-description">Compilation of key moments from our regional volleyball championship victory, showcasing teamwork and strategic gameplay.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>1.2K views</span>
+                            </div>
+                            <span class="video-date">Dec 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="../assets/images/event1.jpg" alt="Academic Journey" class="video-thumb">
+                        <div class="play-button" onclick="openVideoModal('https://www.youtube.com/embed/example2', 'My Academic Journey')">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <div class="video-header">
+                            <h3>My Academic Journey</h3>
+                            <span class="video-duration">5:20</span>
+                        </div>
+                        <p class="video-description">A personal reflection on my academic journey, challenges overcome, and goals for the future in medicine.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>856 views</span>
+                            </div>
+                            <span class="video-date">Nov 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="../assets/images/ministry1.jpg" alt="Faith & Service" class="video-thumb">
+                        <div class="play-button" onclick="openVideoModal('https://www.youtube.com/embed/example3', 'Faith & Service')">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-content">
+                        <div class="video-header">
+                            <h3>Faith & Service</h3>
+                            <span class="video-duration">4:15</span>
+                        </div>
+                        <p class="video-description">Exploring the intersection of faith and service in my life, and how it shapes my approach to medicine and community.</p>
+                        <div class="video-meta">
+                            <div class="video-views">
+                                <i class="fa-solid fa-eye"></i>
+                                <span>623 views</span>
+                            </div>
+                            <span class="video-date">Oct 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Showcase Section -->
+        <section class="content-showcase" id="content-showcase">
+            <h2 class="section-title">Content Showcase</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <i class="fa-solid fa-blog content-icon"></i>
+                    <h3>Blog Posts</h3>
+                    <p>Thoughtful articles on faith, medicine, leadership, and personal growth. Sharing insights and experiences to inspire others.</p>
+                    <div class="content-stats">
+                        <div class="content-stat">
+                            <span class="content-stat-number">25+</span>
+                            <span class="content-stat-label">Articles</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">5K+</span>
+                            <span class="content-stat-label">Readers</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">4.8</span>
+                            <span class="content-stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="#" class="content-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        Read Blog
+                    </a>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-podcast content-icon"></i>
+                    <h3>Podcast Appearances</h3>
+                    <p>Featured guest on various podcasts discussing topics ranging from youth leadership to pre-medical preparation and faith integration.</p>
+                    <div class="content-stats">
+                        <div class="content-stat">
+                            <span class="content-stat-number">8</span>
+                            <span class="content-stat-label">Episodes</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">15K+</span>
+                            <span class="content-stat-label">Listeners</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">4.9</span>
+                            <span class="content-stat-label">Rating</span>
+                        </div>
+                    </div>
+                    <a href="#" class="content-btn">
+                        <i class="fa-solid fa-headphones"></i>
+                        Listen Now
+                    </a>
+                </div>
+
+                <div class="content-card">
+                    <i class="fa-solid fa-newspaper content-icon"></i>
+                    <h3>Published Articles</h3>
+                    <p>Academic and community-focused articles published in student journals and local publications, contributing to knowledge sharing.</p>
+                    <div class="content-stats">
+                        <div class="content-stat">
+                            <span class="content-stat-number">12</span>
+                            <span class="content-stat-label">Publications</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">3</span>
+                            <span class="content-stat-label">Journals</span>
+                        </div>
+                        <div class="content-stat">
+                            <span class="content-stat-number">2.5K+</span>
+                            <span class="content-stat-label">Citations</span>
+                        </div>
+                    </div>
+                    <a href="#" class="content-btn">
+                        <i class="fa-solid fa-book-open"></i>
+                        View Publications
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section class="photo-gallery" id="photo-gallery">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="photo-grid">
+                <div class="photo-item" onclick="openLightbox('../assets/images/profile.png', 'Professional Headshot')">
+                    <img src="../assets/images/profile.png" alt="Professional Headshot" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Professional Headshot</div>
+                            <div class="photo-caption">Representing academic and professional excellence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" onclick="openLightbox('../assets/images/project1.png', 'Research Project')">
+                    <img src="../assets/images/project1.png" alt="Research Project" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Research Project</div>
+                            <div class="photo-caption">Pediatric asthma research in Caribbean communities</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" onclick="openLightbox('../assets/images/project2.png', 'Community Service')">
+                    <img src="../assets/images/project2.png" alt="Community Service" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Community Service</div>
+                            <div class="photo-caption">Health outreach programs in rural areas</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" onclick="openLightbox('../assets/images/project3.png', 'Leadership Training')">
+                    <img src="../assets/images/project3.png" alt="Leadership Training" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Leadership Training</div>
+                            <div class="photo-caption">Youth ministry leadership development</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" onclick="openLightbox('../assets/images/project4.png', 'Academic Achievement')">
+                    <img src="../assets/images/project4.png" alt="Academic Achievement" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Academic Achievement</div>
+                            <div class="photo-caption">Dean's List recognition ceremony</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="photo-item" onclick="openLightbox('../assets/images/project5.png', 'Team Success')">
+                    <img src="../assets/images/project5.png" alt="Team Success" class="photo-img">
+                    <div class="photo-overlay">
+                        <div class="photo-info">
+                            <div class="photo-title">Team Success</div>
+                            <div class="photo-caption">Celebrating volleyball championship victory</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <img src="" alt="" class="lightbox-img" id="lightbox-img">
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <div class="video-modal" id="video-modal">
+            <div class="video-modal-content">
+                <button class="video-modal-close" onclick="closeVideoModal()">&times;</button>
+                <iframe src="" frameborder="0" allowfullscreen class="video-iframe" id="video-iframe"></iframe>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">JD</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. © <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // Lightbox functionality
+        function openLightbox(imageSrc, title) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            
+            lightboxImg.src = imageSrc;
+            lightboxImg.alt = title;
+            lightbox.classList.add('active');
+            
+            // Close lightbox when clicking outside the image
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+        }
+        
+        // Video modal functionality
+        function openVideoModal(videoSrc, title) {
+            const videoModal = document.getElementById('video-modal');
+            const videoIframe = document.getElementById('video-iframe');
+            
+            videoIframe.src = videoSrc;
+            videoModal.classList.add('active');
+            
+            // Close video modal when clicking outside the video
+            videoModal.addEventListener('click', function(e) {
+                if (e.target === videoModal) {
+                    closeVideoModal();
+                }
+            });
+        }
+        
+        function closeVideoModal() {
+            const videoModal = document.getElementById('video-modal');
+            const videoIframe = document.getElementById('video-iframe');
+            
+            videoModal.classList.remove('active');
+            videoIframe.src = ''; // Stop video playback
+        }
+        
+        // Close modals with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                closeVideoModal();
+            }
+        });
+    </script>
+</body>
+</html> 

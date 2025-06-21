@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Sample Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">Sample</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="projects.html" title="Projects" class="active"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>My <span class="highlight">Projects</span></h1>
+                    <h2>Faith • Innovation • Service • Impact</h2>
+                    <p>Each project represents a step in my journey of combining faith, technology, and service to make a meaningful difference in the world.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Lives Impacted</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Philosophy Section -->
+        <section class="philosophy-section">
+            <h2 class="section-title">My Project Philosophy</h2>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <i class="fa-solid fa-heart philosophy-icon"></i>
+                    <h3>Faith-Driven Purpose</h3>
+                    <p>Every project begins with prayer and is guided by the question: "How can this serve God and others?"</p>
+                </div>
+                <div class="philosophy-card">
+                    <i class="fa-solid fa-users philosophy-icon"></i>
+                    <h3>Community Impact</h3>
+                    <p>Projects are designed to create positive change, whether in healthcare, education, or spiritual growth.</p>
+                </div>
+                <div class="philosophy-card">
+                    <i class="fa-solid fa-lightbulb philosophy-icon"></i>
+                    <h3>Innovation & Learning</h3>
+                    <p>Each project is an opportunity to learn new skills and push creative boundaries while maintaining excellence.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects-showcase" id="projects">
+            <h2 class="section-title">Projects & Work Showcase</h2>
+            
+            <!-- Role Categories -->
+            <div class="role-categories">
+                <div class="role-category" id="software-engineer">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-code"></i>
+                        Software Engineer
+                    </h3>
+                    <p class="category-desc">Building innovative solutions and tools that solve real-world problems.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="tech">
+                            <div class="project-image">
+                                <img src="../assets/images/project4.png" alt="GamiLife App" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-rocket"></i> Demo</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>GamiLife App</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Programming</span>
+                                        <span class="tag">Web</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Habit-tracking and XP leveling web app designed to motivate students through gamification.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Full Stack Developer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> HTML, CSS, JS, Firebase</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Lesson: Gamification boosts motivation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project1.png" alt="Church Management System" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-rocket"></i> Demo</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Church Management System</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Full Stack</span>
+                                        <span class="tag">Database</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Comprehensive church management platform for member tracking, event planning, and volunteer coordination.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Lead Developer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> React, Node.js, MongoDB</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-church"></i>
+                                    <span>Purpose: Streamline ministry operations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project2.png" alt="Health Tracker API" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-rocket"></i> Demo</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Health Tracker API</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Backend</span>
+                                        <span class="tag">API</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">RESTful API for tracking health metrics, medication schedules, and wellness goals.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Backend Developer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Python, Flask, PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-heartbeat"></i>
+                                    <span>Purpose: Improve health outcomes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project3.png" alt="Study Planner App" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-rocket"></i> Demo</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Study Planner App</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Mobile</span>
+                                        <span class="tag">Education</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Mobile app for students to organize study schedules, track progress, and manage academic goals.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Mobile Developer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> React Native, Firebase</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <span>Purpose: Enhance student success</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-category" id="content-creator">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-video"></i>
+                        Content Creator
+                    </h3>
+                    <p class="category-desc">Producing inspiring and educational content that reaches hearts and minds.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="christian-content">
+                            <div class="project-image">
+                    <img src="../assets/images/project1.png" alt="Devotional Video" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-play"></i> Watch</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                    <h3>Devotional Video Series</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Content Creation</span>
+                                        <span class="tag">Video</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Short-form Christian videos designed to inspire and guide youth in their faith journey.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Creator, Editor</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> DaVinci Resolve, Canva</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <span>Purpose: Inspire faith in young people</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project2.png" alt="Medical Education Series" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-play"></i> Watch</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Medical Education Series</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Educational</span>
+                                        <span class="tag">Healthcare</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Educational content explaining medical concepts in simple terms for the general public.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Content Creator</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Premiere Pro, After Effects</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-stethoscope"></i>
+                                    <span>Purpose: Improve health literacy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project3.png" alt="Podcast: Faith & Medicine" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-play"></i> Listen</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Podcast: Faith & Medicine</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Podcast</span>
+                                        <span class="tag">Interview</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Weekly podcast exploring the intersection of faith and medical practice with healthcare professionals.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Host, Producer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Audacity, Anchor</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-microphone"></i>
+                                    <span>Purpose: Bridge faith and healthcare</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project4.png" alt="Social Media Campaign" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Social Media Campaign</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Marketing</span>
+                                        <span class="tag">Social Media</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Multi-platform social media campaign promoting youth ministry events and faith-based initiatives.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Campaign Manager</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Canva, Buffer, Analytics</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-share-alt"></i>
+                                    <span>Purpose: Expand ministry reach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-category" id="future-doctor">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-user-md"></i>
+                        Future Doctor
+                    </h3>
+                    <p class="category-desc">Preparing to heal and care for others in their time of need.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="medical">
+                            <div class="project-image">
+                    <img src="../assets/images/project2.png" alt="Case Study" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                    <h3>Case Study: Pediatric Asthma</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Medical</span>
+                                        <span class="tag">Research</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Comprehensive research and presentation on pediatric asthma management in the Caribbean region.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Lead Researcher</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> PubMed, PowerPoint</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                    <span>Lesson: The importance of early intervention</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project1.png" alt="Medical Shadowing" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Medical Shadowing Program</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Clinical</span>
+                                        <span class="tag">Experience</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Structured shadowing program with pediatricians, emergency physicians, and cardiologists.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Medical Observer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Clinical Documentation, EHR</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-user-md"></i>
+                                    <span>Purpose: Gain clinical insight</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project3.png" alt="Health Education Workshop" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Health Education Workshop</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Education</span>
+                                        <span class="tag">Community</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Interactive workshops teaching basic first aid and health awareness to community groups.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Workshop Facilitator</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> First Aid Kits, Educational Materials</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-chalkboard-teacher"></i>
+                                    <span>Purpose: Empower community health</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project4.png" alt="Medical Literature Review" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Medical Literature Review</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Research</span>
+                                        <span class="tag">Analysis</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Systematic review of recent medical literature on telemedicine applications in rural healthcare.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Research Analyst</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> PubMed, EndNote, Statistical Analysis</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-book-medical"></i>
+                                    <span>Purpose: Advance medical knowledge</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-category" id="volleyball-player">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-volleyball"></i>
+                        Volleyball Player
+                    </h3>
+                    <p class="category-desc">Developing teamwork, leadership, and physical excellence through sports.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="athletic">
+                            <div class="project-image">
+                    <img src="../assets/images/project3.png" alt="Volleyball Highlights" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-play"></i> Watch</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                    <h3>Volleyball Highlights</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Athletics</span>
+                                        <span class="tag">Video</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Compilation of tournament highlights and stats, showcasing teamwork and leadership on the court.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Player, Editor</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> iMovie, GoPro</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-trophy"></i>
+                                    <span>Purpose: Showcase teamwork and leadership</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project1.png" alt="Training Program" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Volleyball Training Program</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Training</span>
+                                        <span class="tag">Coaching</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Developed comprehensive training program for youth volleyball players focusing on skills and character.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Assistant Coach</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Training Plans, Video Analysis</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Purpose: Develop young athletes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project2.png" alt="Tournament Organization" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Tournament Organization</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Event Planning</span>
+                                        <span class="tag">Leadership</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Organized regional volleyball tournament bringing together 12 teams and 200+ participants.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Tournament Director</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Event Management, Scheduling</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                    <span>Purpose: Build community through sport</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project4.png" alt="Sports Analytics" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Sports Analytics Project</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Analytics</span>
+                                        <span class="tag">Performance</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Data analysis project tracking team performance metrics and individual player statistics.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Data Analyst</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Excel, Python, Visualization</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-chart-line"></i>
+                                    <span>Purpose: Improve team performance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-category" id="student">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Student
+                    </h3>
+                    <p class="category-desc">Continuously learning and growing in knowledge to better serve others.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="creative">
+                            <div class="project-image">
+                                <img src="../assets/images/project5.png" alt="UI Mockup" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> Preview</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>UI Mockup: Ministry Portal</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Design</span>
+                                        <span class="tag">UI/UX</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Comprehensive design system for a church volunteer management system with modern UI/UX principles.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Designer</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Figma, Photoshop</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-church"></i>
+                                    <span>Purpose: Streamline ministry operations</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project1.png" alt="Academic Research" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Academic Research Paper</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Research</span>
+                                        <span class="tag">Writing</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Research paper on the impact of technology on modern healthcare delivery systems.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Lead Author</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Academic Writing, Citations</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-file-alt"></i>
+                                    <span>Purpose: Contribute to academic discourse</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project2.png" alt="Study Group Initiative" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Study Group Initiative</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Leadership</span>
+                                        <span class="tag">Education</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Founded and led study groups for pre-med students, creating collaborative learning environments.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Group Leader</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Study Materials, Scheduling</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Purpose: Foster academic collaboration</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project3.png" alt="Language Learning" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Language Learning Project</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Language</span>
+                                        <span class="tag">Cultural</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Intensive Spanish language learning program with cultural immersion and medical terminology focus.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Language Student</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Duolingo, Cultural Exchange</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-language"></i>
+                                    <span>Purpose: Enhance patient communication</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="role-category" id="purpose-driven-missionary">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-heart"></i>
+                        Purpose Driven Missionary
+                    </h3>
+                    <p class="category-desc">Living with intention to make a positive impact in all areas of life.</p>
+                    <div class="projects-grid">
+                        <div class="project-card" id="missionary-project">
+                            <div class="project-image">
+                                <img src="../assets/images/ministry1.jpg" alt="Ministry Outreach" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Community Health Outreach</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Ministry</span>
+                                        <span class="tag">Healthcare</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Organized health screening and education program for underserved communities in Kingston.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Project Coordinator</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Community Outreach, Medical Screening</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-hands-helping"></i>
+                                    <span>Purpose: Serve communities with love and care</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project1.png" alt="Youth Mentorship" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Youth Mentorship Program</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Mentorship</span>
+                                        <span class="tag">Leadership</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">One-on-one mentorship program guiding high school students in faith, academics, and life skills.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Mentor</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Life Coaching, Goal Setting</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-user-graduate"></i>
+                                    <span>Purpose: Empower next generation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project2.png" alt="Mission Trip" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>International Mission Trip</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">International</span>
+                                        <span class="tag">Service</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Led medical mission trip to rural communities providing healthcare and spiritual support.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Team Leader</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Medical Supplies, Translation</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span>Purpose: Global service and healing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="../assets/images/project3.png" alt="Prayer Initiative" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-eye"></i> View</a>
+                                        <a href="#" class="project-link" target="_blank"><i class="fa-solid fa-external-link-alt"></i> Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Campus Prayer Initiative</h3>
+                                    <div class="project-tags">
+                                        <span class="tag">Spiritual</span>
+                                        <span class="tag">Community</span>
+                                    </div>
+                                </div>
+                                <p class="project-description">Organized weekly prayer meetings and spiritual support groups for university students.</p>
+                                <div class="project-details">
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span><strong>Role:</strong> Prayer Coordinator</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <i class="fa-solid fa-tools"></i>
+                                        <span><strong>Tools:</strong> Event Planning, Spiritual Guidance</span>
+                                    </div>
+                                </div>
+                                <div class="project-purpose">
+                                    <i class="fa-solid fa-pray"></i>
+                                    <span>Purpose: Foster spiritual community</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">Sample</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. © <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

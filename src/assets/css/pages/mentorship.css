@@ -1,0 +1,752 @@
+/* Mentorship Hub Page Styles */
+:root {
+    --mentorship-primary: #00bcd4;
+    --mentorship-secondary: #0097a7;
+    --mentorship-accent: #86a8e7;
+    --mentorship-success: #91eac9;
+    --mentorship-warning: #f59e0b;
+    --mentorship-danger: #ef4444;
+    --mentorship-bg: var(--bg-dark);
+    --mentorship-card: rgba(255,255,255,0.03);
+    --mentorship-border: rgba(255,255,255,0.05);
+    --mentorship-text: var(--text-light);
+    --mentorship-text-secondary: #b2ebf2;
+}
+
+/* Hero Section */
+.mentorship-hero {
+    background: linear-gradient(135deg, var(--bg-dark) 0%, #1a1b21 100%);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mentorship-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0,188,212,0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--mentorship-primary);
+    opacity: 0.9;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+.stat-item:hover {
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--mentorship-primary);
+    box-shadow: 0 12px 36px rgba(0,188,212,0.15);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--mentorship-primary);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--mentorship-text-secondary);
+}
+
+/* Mentorship Areas */
+.mentorship-areas {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--mentorship-bg) 100%);
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.area-card {
+    background: var(--mentorship-card);
+    border: 1px solid var(--mentorship-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.area-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--mentorship-primary), var(--mentorship-secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--mentorship-primary);
+}
+
+.area-card:hover::before {
+    opacity: 1;
+}
+
+.area-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--mentorship-primary), var(--mentorship-secondary));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.area-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.area-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--mentorship-text);
+}
+
+.area-card p {
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.area-topics {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.area-topics li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--mentorship-border);
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--mentorship-text-secondary);
+}
+
+.area-topics li:last-child {
+    border-bottom: none;
+}
+
+.area-topics li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--mentorship-primary);
+    font-weight: bold;
+}
+
+.area-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.area-status.available {
+    background: var(--mentorship-success);
+    color: #000;
+}
+
+.area-status.limited {
+    background: var(--mentorship-warning);
+    color: white;
+}
+
+.area-status.unavailable {
+    background: var(--mentorship-danger);
+    color: white;
+}
+
+/* Mentorship Programs */
+.mentorship-programs {
+    padding: 4rem 2rem;
+    background: var(--mentorship-bg);
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-card {
+    background: var(--mentorship-card);
+    border: 1px solid var(--mentorship-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--mentorship-primary);
+}
+
+.program-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.program-header h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--mentorship-text);
+    margin: 0;
+}
+
+.program-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--mentorship-primary);
+    color: white;
+}
+
+.program-content {
+    margin-bottom: 1.5rem;
+}
+
+.program-content p {
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.program-features li {
+    padding: 0.5rem 0;
+    color: var(--mentorship-text-secondary);
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.program-features i {
+    color: var(--mentorship-primary);
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+}
+
+.program-duration {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--mentorship-text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.program-duration i {
+    color: var(--mentorship-primary);
+}
+
+.program-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.program-btn.primary {
+    background: var(--mentorship-primary);
+    color: white;
+}
+
+.program-btn.primary:hover {
+    background: var(--mentorship-secondary);
+    transform: translateY(-2px);
+}
+
+.program-btn.secondary {
+    background: transparent;
+    color: var(--mentorship-primary);
+    border-color: var(--mentorship-primary);
+}
+
+.program-btn.secondary:hover {
+    background: var(--mentorship-primary);
+    color: white;
+}
+
+.program-btn.outline {
+    background: transparent;
+    color: var(--mentorship-text-secondary);
+    border-color: var(--mentorship-border);
+}
+
+.program-btn.outline:hover {
+    border-color: var(--mentorship-primary);
+    color: var(--mentorship-primary);
+}
+
+/* Success Stories */
+.success-stories {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--mentorship-bg) 100%);
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.story-card {
+    background: var(--mentorship-card);
+    border: 1px solid var(--mentorship-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--mentorship-primary), var(--mentorship-secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--mentorship-primary);
+}
+
+.story-card:hover::before {
+    opacity: 1;
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.story-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--mentorship-primary), var(--mentorship-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-avatar i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.story-info h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--mentorship-text);
+    margin: 0 0 0.25rem 0;
+}
+
+.story-area {
+    font-size: 0.9rem;
+    color: var(--mentorship-primary);
+    font-weight: 500;
+}
+
+.story-card blockquote {
+    font-style: italic;
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    border-left: 4px solid var(--mentorship-primary);
+}
+
+.story-card blockquote::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--mentorship-primary);
+    line-height: 1;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    opacity: 0.3;
+}
+
+.story-outcome {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--mentorship-success);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.story-outcome i {
+    color: var(--mentorship-success);
+}
+
+/* Resources Hub */
+.resources-hub {
+    padding: 4rem 2rem;
+    background: var(--mentorship-bg);
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-card {
+    background: var(--mentorship-card);
+    border: 1px solid var(--mentorship-border);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--mentorship-primary), var(--mentorship-secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255,255,255,0.05);
+    border-color: var(--mentorship-primary);
+}
+
+.resource-card:hover::before {
+    opacity: 1;
+}
+
+.resource-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--mentorship-primary), var(--mentorship-secondary));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.resource-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.resource-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--mentorship-text);
+}
+
+.resource-card p {
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.resource-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--mentorship-border);
+    color: var(--mentorship-text-secondary);
+    font-size: 0.9rem;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+}
+
+.resource-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--mentorship-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: rgba(0,188,212,0.1);
+}
+
+.resource-link:hover {
+    background: var(--mentorship-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.resource-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.resource-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Mentorship CTA */
+.mentorship-cta {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #1a1b21 0%, var(--mentorship-bg) 100%);
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--mentorship-text);
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    color: var(--mentorship-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.cta-buttons .primary-btn {
+    background: var(--mentorship-primary);
+    color: white;
+}
+
+.cta-buttons .primary-btn:hover {
+    background: var(--mentorship-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,188,212,0.3);
+}
+
+.cta-buttons .secondary-btn {
+    background: transparent;
+    color: var(--mentorship-primary);
+    border-color: var(--mentorship-primary);
+}
+
+.cta-buttons .secondary-btn:hover {
+    background: var(--mentorship-primary);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,188,212,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mentorship-hero {
+        padding: 3rem 1rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .areas-grid,
+    .programs-grid,
+    .stories-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .area-card,
+    .program-card,
+    .story-card,
+    .resource-card {
+        padding: 1.5rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text h2 {
+        font-size: 1.2rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .area-card,
+    .program-card,
+    .story-card,
+    .resource-card {
+        padding: 1rem;
+    }
+} 

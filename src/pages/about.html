@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sample Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">Sample</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown open">
+                <a href="about.html" title="About Me" class="active"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>About <span class="highlight">Sample Name</span></h1>
+                    <h2>Faith • Character • Learning • Freedom • Family</h2>
+                    <p>This is a sample journey description showcasing how personal information would be displayed in a portfolio template.</p>
+                </div>
+                <img src="../assets/images/profile.png" alt="Sample Profile" class="hero-profile">
+            </div>
+        </section>
+
+        <!-- Character Profile Section -->
+        <section class="profile-section" id="character-profile">
+            <h2 class="section-title">Character Profile</h2>
+            <div class="profile-grid">
+                <div class="profile-card basic-info">
+                    <h3>Basic Information</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Full Name:</span>
+                            <span class="info-value">Sample, John Anthony</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Nickname:</span>
+                            <span class="info-value">Sample, Mr. Sample, Sample J, J Sample</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Titles:</span>
+                            <span class="info-value">Student, Athlete, Content Creator, Software Engineer</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Age:</span>
+                            <span class="info-value">20</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Gender:</span>
+                            <span class="info-value">Male</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Occupation:</span>
+                            <span class="info-value">Student & Future Medical Professional & Volleyball Player</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Birthplace:</span>
+                            <span class="info-value">Sample City, Sample Country</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Nationality:</span>
+                            <span class="info-value">Sample Nationality</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Languages:</span>
+                            <span class="info-value">English (Native), Spanish (Intermediate), French (Intermediate), Latin (Intermediate), Japanese (Beginner)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Current Location:</span>
+                            <span class="info-value">Sample City, Sample Country</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Education Level:</span>
+                            <span class="info-value">High School - Sample College</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Interests:</span>
+                            <span class="info-value">Medicine, Technology, Sports, Ministry, Music, Dance, Reading, Writing, and more</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card background">
+                    <h3>Background & History</h3>
+                    <div class="background-content">
+                        <div class="background-section">
+                            <h4><i class="fa-solid fa-home"></i> Family & Upbringing</h4>
+                            <p>Sample family background description. This would describe the person's upbringing and family values in a real portfolio.</p>
+                        </div>
+                        <div class="background-section">
+                            <h4><i class="fa-solid fa-star"></i> Important Life Events</h4>
+                            <p><strong>Triumphs:</strong> Sample achievements and accomplishments that would be listed in a real portfolio.<br>
+                            <strong>Turning Points:</strong> Sample life-changing moments and experiences that shaped the person's journey.</p>
+                        </div>
+                        <div class="background-section">
+                            <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                            <p>Sample educational background and current academic pursuits. This would describe the person's educational journey and goals.</p>
+                        </div>
+                        <div class="background-section">
+                            <h4><i class="fa-solid fa-cross"></i> Cultural & Religious Influences</h4>
+                            <p>Sample cultural and religious background that influences the person's values and mission.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card relationships">
+                    <h3>Relationships</h3>
+                    <div class="relationships-content">
+                        <div class="relationship-section">
+                            <h4><i class="fa-solid fa-heart"></i> Family Ties</h4>
+                            <p><strong>Parents:</strong> Sample description of supportive parents and their influence.<br>
+                            <strong>Siblings:</strong> Sample description of sibling relationships and shared interests.<br>
+                            <strong>Extended Family:</strong> Sample description of extended family network and support system.</p>
+                        </div>
+                        <div class="relationship-section">
+                            <h4><i class="fa-solid fa-user-graduate"></i> Mentors</h4>
+                            <p><strong>Youth Pastor:</strong> Sample mentor who guided spiritual growth and leadership development.<br>
+                            <strong>Volleyball Coach:</strong> Sample mentor who taught discipline, teamwork, and perseverance.<br>
+                            <strong>Medical Professionals:</strong> Sample mentors inspiring the pursuit of medicine with compassion and excellence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-card message">
+                    <h3>A Message From Me</h3>
+                    <div class="message-content">
+                        <i class="fa-solid fa-quote-left message-icon"></i>
+                        <blockquote>
+                            "This is a sample personal message that would appear in a real portfolio. It would express the person's values, mission, and commitment to their goals. The message would reflect their faith, character, and dedication to serving others through their chosen path."
+                        </blockquote>
+                        <div class="message-signature">
+                            <span class="signature-name">— Sample Name</span>
+                            <span class="signature-date">2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Family Tree Section -->
+        <section class="family-tree-section" id="family-tree">
+            <h2 class="section-title">My Family Tree</h2>
+            <div class="family-tree-container">
+                <div class="tree-controls">
+                    <button class="tree-btn active" data-generation="all">All Generations</button>
+                    <button class="tree-btn" data-generation="immediate">Immediate Family</button>
+                    <button class="tree-btn" data-generation="extended">Extended Family</button>
+                    <button class="tree-btn" data-generation="maternal">Maternal Line</button>
+                    <button class="tree-btn" data-generation="paternal">Paternal Line</button>
+                </div>
+                
+                <div class="family-tree">
+                    <!-- Great Grandparents Generation -->
+                    <div class="tree-generation great-grandparents" data-generation="extended">
+                        <div class="generation-label">Great Grandparents</div>
+                        <div class="family-members">
+                            <div class="family-member" data-member="great-grandmother-maternal" data-lineage="maternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Great Grandmother</h4>
+                                    <span class="member-role">Maternal Great Grandmother</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of great grandmother's role in the family and her characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Matriarch</span>
+                                        <span class="trait">Wise</span>
+                                        <span class="trait">Faithful</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-member" data-member="great-grandfather-paternal" data-lineage="paternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Great Grandfather</h4>
+                                    <span class="member-role">Paternal Great Grandfather</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of great grandfather's role in the family and his characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Pioneer</span>
+                                        <span class="trait">Leader</span>
+                                        <span class="trait">Hardworking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grandparents Generation -->
+                    <div class="tree-generation grandparents" data-generation="extended">
+                        <div class="generation-label">Grandparents</div>
+                        <div class="family-members">
+                            <div class="family-member" data-member="grandmother-maternal" data-lineage="maternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Grandmother</h4>
+                                    <span class="member-role">Maternal Grandmother</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of grandmother's role in the family and her characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Prayerful</span>
+                                        <span class="trait">Nurturing</span>
+                                        <span class="trait">Healer</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-member" data-member="grandfather-paternal" data-lineage="paternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Grandfather</h4>
+                                    <span class="member-role">Paternal Grandfather</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of grandfather's role in the family and his characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Integrity</span>
+                                        <span class="trait">Generous</span>
+                                        <span class="trait">Leader</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-member" data-member="grandmother-paternal" data-lineage="paternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Grandmother</h4>
+                                    <span class="member-role">Paternal Grandmother</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of grandmother's role in the family and her characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Educator</span>
+                                        <span class="trait">Storyteller</span>
+                                        <span class="trait">Matriarch</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Aunts & Uncles Generation -->
+                    <div class="tree-generation aunts-uncles" data-generation="extended">
+                        <div class="generation-label">Aunts & Uncles</div>
+                        <div class="family-members">
+                            <div class="family-member" data-member="aunt-maternal-1" data-lineage="maternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Aunt</h4>
+                                    <span class="member-role">Maternal Aunt</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of aunt's role in the family and her characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Mentor</span>
+                                        <span class="trait">Supportive</span>
+                                        <span class="trait">Caring</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-member" data-member="uncle-paternal-1" data-lineage="paternal" data-generation="extended">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Uncle</h4>
+                                    <span class="member-role">Paternal Uncle</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of uncle's role in the family and his characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Role Model</span>
+                                        <span class="trait">Supportive</span>
+                                        <span class="trait">Wise</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parents Generation -->
+                    <div class="tree-generation parents" data-generation="immediate">
+                        <div class="generation-label">Parents</div>
+                        <div class="family-members">
+                            <div class="family-member" data-member="father" data-lineage="paternal" data-generation="immediate">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Father</h4>
+                                    <span class="member-role">Father</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of father's role in the family and his characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Provider</span>
+                                        <span class="trait">Protector</span>
+                                        <span class="trait">Leader</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="family-member" data-member="mother" data-lineage="maternal" data-generation="immediate">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Mother</h4>
+                                    <span class="member-role">Mother</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of mother's role in the family and her characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Nurturer</span>
+                                        <span class="trait">Prayerful</span>
+                                        <span class="trait">Caring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Siblings Generation -->
+                    <div class="tree-generation siblings" data-generation="immediate">
+                        <div class="generation-label">Siblings</div>
+                        <div class="family-members">
+                            <div class="family-member" data-member="sibling-1" data-lineage="both" data-generation="immediate">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Sibling</h4>
+                                    <span class="member-role">Brother/Sister</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of sibling's role in the family and their characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Supportive</span>
+                                        <span class="trait">Fun</span>
+                                        <span class="trait">Caring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Generation -->
+                    <div class="tree-generation current" data-generation="immediate">
+                        <div class="generation-label">Current Generation</div>
+                        <div class="family-members">
+                            <div class="family-member current-member" data-member="self" data-lineage="both" data-generation="immediate">
+                                <div class="member-avatar">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sample Name</h4>
+                                    <span class="member-role">Portfolio Owner</span>
+                                    <span class="member-location">Sample City, Sample Country</span>
+                                </div>
+                                <div class="member-details">
+                                    <p>Sample description of the portfolio owner's role and characteristics.</p>
+                                    <div class="member-traits">
+                                        <span class="trait">Ambitious</span>
+                                        <span class="trait">Faithful</span>
+                                        <span class="trait">Dedicated</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Five Pillars Section -->
+        <section class="pillars-section" id="pillars">
+            <h2 class="section-title">My Five Pillars</h2>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-cross"></i></div>
+                    <h3>Faith</h3>
+                    <p>My relationship with God is the foundation of my life, guiding my actions and decisions.</p>
+                    <div class="pillar-verse">"Trust in the LORD with all your heart." - Proverbs 3:5</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-shield-heart"></i></div>
+                    <h3>Character</h3>
+                    <p>I strive to live with integrity, kindness, and humility in all that I do.</p>
+                    <div class="pillar-verse">"Clothe yourselves with compassion, kindness, humility." - Colossians 3:12</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Learning</h3>
+                    <p>I am a lifelong learner, committed to growing in knowledge and wisdom.</p>
+                    <div class="pillar-verse">"The heart of the discerning acquires knowledge." - Proverbs 18:15</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-feather-alt"></i></div>
+                    <h3>Freedom</h3>
+                    <p>I embrace the freedom found in Christ and seek to live a life of purpose and liberty.</p>
+                    <div class="pillar-verse">"It is for freedom that Christ has set us free." - Galatians 5:1</div>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Family</h3>
+                    <p>I cherish my family and the strong bonds that we share, rooted in love and faith.</p>
+                    <div class="pillar-verse">"Love one another. As I have loved you." - John 13:34</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="mission-section" id="mission-vision">
+            <h2 class="section-title">Mission & Vision</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <h3>My Mission</h3>
+                    <p>To live a purpose-driven life dedicated to serving God and others through compassionate healthcare, innovative technology, and inspiring content that spreads a message of faith, hope, and love.</p>
+                    <div class="mission-highlight">
+                        <i class="fa-solid fa-cross"></i>
+                        <span>Rooted in Faith, Guided by Love</span>
+                    </div>
+                </div>
+                <div class="mission-card">
+                    <h3>My Vision</h3>
+                    <p>To become a physician who heals with skill and compassion, a software engineer who builds solutions for a better world, and a content creator who inspires others to pursue their passions and live a life of purpose.</p>
+                    <div class="mission-highlight">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>Innovating with Purpose, Inspiring with Passion</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts Section -->
+        <section class="facts-section" id="fun-facts">
+            <h2 class="section-title">Fun Facts</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-music"></i></div>
+                    <h4>Music Lover</h4>
+                    <p>Sample fact about music taste. This would describe musical interests in a real portfolio.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-volleyball-ball"></i></div>
+                    <h4>Volleyball Player</h4>
+                    <p>Sample fact about volleyball. This would describe athletic interests in a real portfolio.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-code"></i></div>
+                    <h4>Tech Enthusiast</h4>
+                    <p>Sample fact about technology. This would describe tech interests in a real portfolio.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-book"></i></div>
+                    <h4>Avid Reader</h4>
+                    <p>Sample fact about reading. This would describe literary interests in a real portfolio.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-plane"></i></div>
+                    <h4>Aspiring Traveler</h4>
+                    <p>Sample fact about travel. This would describe travel interests in a real portfolio.</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon"><i class="fa-solid fa-utensils"></i></div>
+                    <h4>Foodie</h4>
+                    <p>Sample fact about food. This would describe culinary interests in a real portfolio.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">SN</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. <br>© <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

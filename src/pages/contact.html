@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sample Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">Sample</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact" class="active"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Let's <span class="highlight">Connect</span></h1>
+                    <h2>Ready to collaborate, share ideas, or just say hello?</h2>
+                    <p>I'm always open to meaningful conversations, collaboration opportunities, and connecting with like-minded individuals who share a passion for faith, service, and making a positive impact.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Response Time</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Response Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-form-card">
+                    <div class="form-header">
+                        <i class="fa-solid fa-envelope-open-text form-icon"></i>
+                        <h3>Send a Message</h3>
+                        <p>I'd love to hear from you! Fill out the form below and I'll get back to you as soon as possible.</p>
+                    </div>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fa-solid fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject"><i class="fa-solid fa-tag"></i> Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="mentorship">Mentorship Request</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="faith">Faith & Ministry</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="custom">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="customSubjectGroup" style="display: none;">
+                            <label for="customSubject"><i class="fa-solid fa-edit"></i> Custom Subject</label>
+                            <input type="text" id="customSubject" name="customSubject">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fa-solid fa-comment"></i> Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your inquiry, project idea, or how we can work together..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to my newsletter for updates and insights
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="info-header">
+                        <i class="fa-solid fa-info-circle info-icon"></i>
+                        <h3>Contact Information</h3>
+                        <p>Get in touch through any of these channels</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope info-icon-small"></i>
+                            <div class="info-content">
+                                <span class="info-label">Email</span>
+                                <span class="info-value">sample@example.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-phone info-icon-small"></i>
+                            <div class="info-content">
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+1 (555) 123-4567</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot info-icon-small"></i>
+                            <div class="info-content">
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Sample City, Sample Country</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock info-icon-small"></i>
+                            <div class="info-content">
+                                <span class="info-label">Response Time</span>
+                                <span class="info-value">Within 24-48 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="contact-section">
+            <h2 class="section-title">Connect on Social Media</h2>
+            <div class="social-grid">
+                <div class="social-card">
+                    <i class="fa-brands fa-github social-icon"></i>
+                    <h3>GitHub</h3>
+                    <p>Check out my coding projects and contributions</p>
+                    <span class="social-username">@sampleuser</span>
+                    <a href="https://github.com/sampleuser" target="_blank" class="outline-btn">Visit Profile</a>
+                </div>
+                <div class="social-card">
+                    <i class="fa-brands fa-linkedin social-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Connect professionally and view my experience</p>
+                    <span class="social-username">@sampleuser</span>
+                    <a href="https://linkedin.com/in/sampleuser" target="_blank" class="outline-btn">Visit Profile</a>
+                </div>
+                <div class="social-card">
+                    <i class="fa-brands fa-instagram social-icon"></i>
+                    <h3>Instagram</h3>
+                    <p>Follow my daily life and behind-the-scenes content</p>
+                    <span class="social-username">@sampleuser</span>
+                    <a href="https://instagram.com/sampleuser" target="_blank" class="outline-btn">Visit Profile</a>
+                </div>
+                <div class="social-card">
+                    <i class="fa-brands fa-twitter social-icon"></i>
+                    <h3>Twitter</h3>
+                    <p>Stay updated with my thoughts and insights</p>
+                    <span class="social-username">@sampleuser</span>
+                    <a href="https://twitter.com/sampleuser" target="_blank" class="outline-btn">Visit Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Availability Section -->
+        <section class="contact-section">
+            <h2 class="section-title">My Availability</h2>
+            <div class="availability-content">
+                <div class="availability-card">
+                    <i class="fa-solid fa-calendar-check availability-icon"></i>
+                    <h3>Response Schedule</h3>
+                    <p>I typically respond to messages within the following timeframes:</p>
+                    <div class="availability-schedule">
+                        <div class="schedule-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="schedule-content">
+                                <span class="schedule-day">Weekdays</span>
+                                <span class="schedule-time">9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="schedule-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div class="schedule-content">
+                                <span class="schedule-day">Weekends</span>
+                                <span class="schedule-time">10:00 AM - 4:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">SN</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. <br>© <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 

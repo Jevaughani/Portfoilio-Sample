@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith - Jordan Doe</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/pages/faith.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-logo">JD</span>
+            <button id="sidebar-toggle" aria-label="Toggle sidebar"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="sidebar-search">
+            <div class="search-container">
+                <i class="fa-solid fa-search search-icon"></i>
+                <input type="text" id="sidebar-search" placeholder="Search..." aria-label="Search">
+                <button id="search-clear" aria-label="Clear search"><i class="fa-solid fa-times"></i></button>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li class="has-dropdown">
+                <a href="../index.html" title="Home"><i class="fa-solid fa-house"></i><span class="nav-text">Home</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#stats-section">Stats</a></li>
+                    <li><a href="../index.html#roles-section">Roles</a></li>
+                    <li><a href="../index.html#future-section">Future Vision</a></li>
+                    <li><a href="../index.html#featured-section">Featured Work</a></li>
+                    <li><a href="../index.html#timeline-section">Journey</a></li>
+                    <li><a href="../index.html#newsletter-section">Newsletter</a></li>
+                    <li><a href="../index.html#connect-section">Connect</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="about.html" title="About Me"><i class="fa-solid fa-user"></i><span class="nav-text">About Me</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="about.html#character-profile">Character Profile</a></li>
+                    <li><a href="about.html#family-tree">Family Tree</a></li>
+                    <li><a href="about.html#pillars">My Five Pillars</a></li>
+                    <li><a href="about.html#mission-vision">Mission & Vision</a></li>
+                    <li><a href="about.html#fun-facts">Fun Facts</a></li>
+                    <li><a href="about.html#spiritual-journey">Spiritual Journey</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="projects.html" title="Projects"><i class="fa-solid fa-briefcase"></i><span class="nav-text">Projects</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html#software-engineer">Software Engineering</a></li>
+                    <li><a href="projects.html#content-creator">Content Creator</a></li>
+                    <li><a href="projects.html#future-doctor">Future Doctor</a></li>
+                    <li><a href="projects.html#volleyball-player">Volleyball Player</a></li>
+                    <li><a href="projects.html#student">Student</a></li>
+                    <li><a href="projects.html#purpose-driven-missionary">Ministry Work</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="faith.html" title="Faith" class="active"><i class="fa-solid fa-dove"></i><span class="nav-text">Faith</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="faith.html">Faith</a></li>
+                    <li><a href="faith.html#statement">Statement</a></li>
+                    <li><a href="faith.html#verses">Verses</a></li>
+                    <li><a href="faith.html#prayers">Prayers</a></li>
+                    <li><a href="faith.html#reflections">Reflections</a></li>
+                    <li><a href="faith.html#sermon-hub">Sermon Hub</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skills.html" title="Skills"><i class="fa-solid fa-brain"></i><span class="nav-text">Skills</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="skills.html#medical-skills">Medical Skills</a></li>
+                    <li><a href="skills.html#technical-skills">Technical Skills</a></li>
+                    <li><a href="skills.html#soft-skills">Soft Skills</a></li>
+                    <li><a href="skills.html#athletic-skills">Athletic Skills</a></li>
+                    <li><a href="skills.html#languages">Languages</a></li>
+                    <li><a href="skills.html#certifications">Certifications</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="academics.html" title="Academics"><i class="fa-solid fa-graduation-cap"></i><span class="nav-text">Academics</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="academics.html#academic-achievements">Academic Achievements</a></li>
+                    <li><a href="academics.html#schools">Schools</a></li>
+                    <li><a href="academics.html#test-scores">Test Scores</a></li>
+                    <li><a href="academics.html#research">Research</a></li>
+                    <li><a href="academics.html#awards">Awards</a></li>
+                    <li><a href="academics.html#resume">Resume</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="media.html" title="Media"><i class="fa-solid fa-image"></i><span class="nav-text">Media</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="media.html#featured-media">Featured Media</a></li>
+                    <li><a href="media.html#video-gallery">Video Gallery</a></li>
+                    <li><a href="media.html#content-showcase">Content Showcase</a></li>
+                    <li><a href="media.html#photo-gallery">Photo Gallery</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="skill-tree.html" title="Skill Tree"><i class="fa-solid fa-sitemap"></i><span class="nav-text">Skill Tree</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="skill-tree.html">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-tree">Skill Tree</a></li>
+                    <li><a href="skill-tree.html#skill-details">Skill Details</a></li>
+                </ul>
+            </li>
+            <li class="has-dropdown">
+                <a href="mentorship.html" title="Mentorship"><i class="fa-solid fa-users"></i><span class="nav-text">Mentorship</span><i class="fa-solid fa-chevron-down dropdown-arrow"></i></a>
+                <ul class="dropdown">
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="mentorship.html#mentorship-areas">Mentorship Areas</a></li>
+                    <li><a href="mentorship.html#mentorship-programs">Programs</a></li>
+                    <li><a href="mentorship.html#success-stories">Success Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" title="Contact"><i class="fa-solid fa-envelope"></i><span class="nav-text">Contact</span></a></li>
+        </ul>
+    </div>
+    <div class="main-content" id="main-content">
+        <!-- Scroll Progress Indicator -->
+        <div class="scroll-progress" id="scroll-progress"></div>
+        
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-toggle-btn">☀️</button>
+        
+        <!-- Hero Section -->
+        <section class="faith-hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>My <span class="highlight">Faith</span></h1>
+                    <h2>Walking with Christ • Living with Purpose • Serving with Love</h2>
+                    <p>My faith is the foundation of everything I do. It guides my decisions, shapes my character, and motivates me to serve others with love and compassion.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Walking with Christ</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Prayers Answered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Lives Touched</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statement of Faith Section -->
+        <section class="statement-section" id="statement">
+            <h2 class="section-title">Statement of Faith</h2>
+            <div class="statement-grid">
+                <div class="statement-card">
+                    <i class="fa-solid fa-cross statement-icon"></i>
+                    <h3>Core Beliefs</h3>
+                <p>I believe in Jesus Christ as Lord and Savior, the Son of God, who died and rose again for my salvation. My life is dedicated to following Him and loving others as He loves me.</p>
+                    <div class="belief-highlights">
+                        <div class="belief-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Salvation through Christ alone</span>
+                        </div>
+                        <div class="belief-item">
+                            <i class="fa-solid fa-book-bible"></i>
+                            <span>Bible as God's inspired Word</span>
+                        </div>
+                        <div class="belief-item">
+                            <i class="fa-solid fa-church"></i>
+                            <span>Fellowship with believers</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="statement-card">
+                    <i class="fa-solid fa-compass statement-icon"></i>
+                    <h3>Life Mission</h3>
+                    <p>To glorify God in all I do, using my gifts and talents to serve others and share the love of Christ through my words and actions.</p>
+                    <div class="mission-highlights">
+                        <div class="mission-item">
+                            <i class="fa-solid fa-hands-helping"></i>
+                            <span>Serve with compassion</span>
+                        </div>
+                        <div class="mission-item">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Share God's wisdom</span>
+                        </div>
+                        <div class="mission-item">
+                            <i class="fa-solid fa-seedling"></i>
+                            <span>Grow in faith daily</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Favorite Verses Section -->
+        <section class="verses-section" id="verses">
+            <h2 class="section-title">Favorite Bible Verses</h2>
+            <div class="verses-grid">
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>Philippians 4:13</h3>
+                    </div>
+                    <blockquote>"I can do all things through Christ who strengthens me."</blockquote>
+                    <p class="verse-reflection">This verse reminds me that with God's strength, I can overcome any challenge and accomplish great things for His glory.</p>
+                </div>
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>Romans 8:28</h3>
+                    </div>
+                    <blockquote>"And we know that all things work together for good to those who love God, to those who are called according to His purpose."</blockquote>
+                    <p class="verse-reflection">God's sovereignty gives me peace, knowing that even difficult circumstances are part of His perfect plan.</p>
+                </div>
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>1 Corinthians 16:14</h3>
+                    </div>
+                    <blockquote>"Let all that you do be done in love."</blockquote>
+                    <p class="verse-reflection">Love should be the motivation behind every action, every decision, and every interaction with others.</p>
+                </div>
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>Proverbs 3:5-6</h3>
+                    </div>
+                    <blockquote>"Trust in the Lord with all your heart, and lean not on your own understanding; in all your ways acknowledge Him, and He shall direct your paths."</blockquote>
+                    <p class="verse-reflection">Surrendering my plans to God and trusting His guidance has led me to places I never imagined.</p>
+                </div>
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>Matthew 22:37-39</h3>
+                    </div>
+                    <blockquote>"Love the Lord your God with all your heart, soul, and mind... Love your neighbor as yourself."</blockquote>
+                    <p class="verse-reflection">These two commandments guide my daily life and relationships with God and others.</p>
+                </div>
+                <div class="verse-card">
+                    <div class="verse-header">
+                        <i class="fa-solid fa-quote-left verse-icon"></i>
+                        <h3>Jeremiah 29:11</h3>
+                    </div>
+                    <blockquote>"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future."</blockquote>
+                    <p class="verse-reflection">God's plans for my life are good, and I can trust Him with my future and my dreams.</p>
+                </div>
+            </div>
+            </section>
+
+        <!-- Prayers Section -->
+        <section class="prayers-section" id="prayers">
+            <h2 class="section-title">Prayers & Devotions</h2>
+            <div class="prayers-grid">
+                <div class="prayer-card">
+                    <i class="fa-solid fa-pray prayer-icon"></i>
+                    <h3>Daily Prayer</h3>
+                    <div class="prayer-content">
+                        <p>"Lord, guide my steps today and let my life reflect Your love and truth. Help me to serve others with compassion and to be a light in this world. Give me wisdom in my decisions and strength in my challenges. In Jesus' name, Amen."</p>
+                    </div>
+                    <div class="prayer-focus">
+                        <span>Focus: Guidance & Service</span>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <i class="fa-solid fa-heart prayer-icon"></i>
+                    <h3>Prayer for Others</h3>
+                    <div class="prayer-content">
+                        <p>"Father, I lift up those who are hurting, lost, or in need. Use me as Your instrument to bring comfort, hope, and healing. Help me to see others through Your eyes and love them with Your heart."</p>
+                    </div>
+                    <div class="prayer-focus">
+                        <span>Focus: Intercession & Compassion</span>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <i class="fa-solid fa-graduation-cap prayer-icon"></i>
+                    <h3>Academic Prayer</h3>
+                    <div class="prayer-content">
+                        <p>"Lord, bless my studies and help me to learn with excellence. May my education be used to serve others and bring glory to Your name. Give me focus, understanding, and the ability to apply knowledge wisely."</p>
+                    </div>
+                    <div class="prayer-focus">
+                        <span>Focus: Excellence & Purpose</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Reflections Section -->
+        <section class="reflections-section" id="reflections">
+            <h2 class="section-title">Faith Reflections</h2>
+            <div class="reflections-grid">
+                <div class="reflection-card">
+                    <div class="reflection-header">
+                        <i class="fa-solid fa-lightbulb reflection-icon"></i>
+                        <h3>Daily Walk</h3>
+                    </div>
+                    <p>My walk with Christ is a daily journey of surrender, growth, and grace. Each day brings new opportunities to trust Him more deeply and to see His faithfulness in action.</p>
+                    <div class="reflection-highlight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>Faith grows through daily surrender</span>
+                    </div>
+                </div>
+                <div class="reflection-card">
+                    <div class="reflection-header">
+                        <i class="fa-solid fa-users reflection-icon"></i>
+                        <h3>Community Impact</h3>
+                    </div>
+                    <p>I share my struggles and victories to encourage others on their path. Through vulnerability and authenticity, I hope to show that God's grace is sufficient for all our needs.</p>
+                    <div class="reflection-highlight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>Authenticity builds genuine connections</span>
+                    </div>
+                </div>
+                <div class="reflection-card">
+                    <div class="reflection-header">
+                        <i class="fa-solid fa-compass reflection-icon"></i>
+                        <h3>God's Guidance</h3>
+                    </div>
+                    <p>In every major decision, I've learned to seek God's wisdom first. His guidance has never failed me, even when the path seemed unclear or challenging.</p>
+                    <div class="reflection-highlight">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>God's timing is always perfect</span>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <!-- Sermon Hub Section -->
+        <section class="sermon-hub-section" id="sermon-hub">
+            <h2 class="section-title">Sermon Hub & Devotionals</h2>
+            <div class="sermon-content">
+                <div class="sermon-intro">
+                    <i class="fa-solid fa-microphone sermon-icon"></i>
+                    <h3>Coming Soon: Faith Insights</h3>
+                    <p>Short devotionals and insights from my faith journey, designed to encourage and inspire others in their walk with Christ.</p>
+                </div>
+                <div class="sermon-topics">
+                    <h4>Topics I'll Cover:</h4>
+                    <div class="topics-grid">
+                        <div class="topic-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Faith & Medicine</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Building Community</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>God's Guidance</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fa-solid fa-hands-helping"></i>
+                            <span>Serving Others</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Faith in Education</span>
+                        </div>
+                        <div class="topic-item">
+                            <i class="fa-solid fa-pray"></i>
+                            <span>Prayer Life</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-brand">
+                <span class="sidebar-logo">JD</span>
+                <span class="footer-verse">"Let all that you do be done in love." — 1 Corinthians 16:14</span>
+            </div>
+            <div class="footer-links">
+                <a href="../index.html">Home</a> ·
+                <a href="contact.html">Contact</a> ·
+                <a href="media.html">Media</a> ·
+                <a href="faith.html">Faith</a>
+            </div>
+            <div class="footer-signoff">All glory to God. © <span id="footer-year"></span></div>
+        </footer>
+    </div>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 
