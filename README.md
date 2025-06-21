@@ -155,7 +155,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The open-source community for inspiration and tools
 
 ## Please Note However
-As with any project, be careful how you change a line of code. There might also be some bugs I wasn't able to fix so... Wish you the best
+As with any project, be careful how you change a line of code. There might also be some bugs I wasn't able to fix so... Wish you the best. Feel free to continue editing this project as you feel fit.
 
 ---
 
