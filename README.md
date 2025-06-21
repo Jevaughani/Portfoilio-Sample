@@ -154,6 +154,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Family and mentors for continuous support
 - The open-source community for inspiration and tools
 
+## Please Note However
+As with any project, be careful how you change a line of code. There might also be some bugs I wasn't able to fix so... Wish you the best
+
 ---
 
 *"Let all that you do be done in love." — 1 Corinthians 16:14* 
